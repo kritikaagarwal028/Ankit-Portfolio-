@@ -19,6 +19,10 @@ import {
 } from "lucide-react";
 import { ANKIT_DATA } from "./constants";
 
+// Import local images so Vite bundles them in production
+import cinematicAvStudio from "./assets/images/cinematic_av_studio_1778996449209.png";
+import ankitSharedPortrait from "./assets/images/ankit_shared_portrait.jpeg";
+
 // --- Theme Context / State ---
 const useTheme = () => {
   const [theme, setTheme] = useState(() => {
@@ -188,7 +192,7 @@ export default function App() {
             initial={{ scale: 1.1, opacity: 0 }}
             animate={{ scale: 1, opacity: 0.15 }}
             transition={{ duration: 2 }}
-            src="/src/assets/images/cinematic_av_studio_1778996449209.png" 
+            src={cinematicAvStudio} 
             className="w-full h-full object-cover grayscale brightness-50"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-white via-transparent to-white dark:from-black dark:via-transparent dark:to-black" />
@@ -356,7 +360,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-20">
           <div className="w-full md:w-5/12 aspect-[4/5] relative overflow-hidden rounded-sm grayscale group bg-zinc-100 dark:bg-zinc-900 border border-current/10">
             <img 
-              src="/src/assets/images/ankit_shared_portrait.jpeg" 
+              src={ankitSharedPortrait} 
               alt="Ankit Keshari"
               referrerPolicy="no-referrer"
               className="w-full h-full object-cover transition-all duration-1000 group-hover:scale-105 group-hover:grayscale-0"
