@@ -356,7 +356,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-20">
           <div className="w-full md:w-5/12 aspect-[4/5] relative overflow-hidden rounded-sm grayscale group bg-zinc-100 dark:bg-zinc-900 border border-current/10">
             <img 
-              src="/src/assets/images/ankit_actual_bw_1779372000435.png" 
+              src="/src/assets/images/ankit_shared_portrait.jpeg" 
               alt="Ankit Keshari"
               referrerPolicy="no-referrer"
               className="w-full h-full object-cover transition-all duration-1000 group-hover:scale-105 group-hover:grayscale-0"
